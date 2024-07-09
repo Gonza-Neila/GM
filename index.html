@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Deportivas - Calculadora de IVA y Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>GM Deportivas y Urbanas - Productos Disponibles</h1>
+        </div>
+    </header>
+
+    <section id="productos">
+        <div class="container">
+            <div class="producto">
+                <img src="images/nike_air_max.jpg" alt="Zapatillas Nike Air Max">
+                <h3>Zapatillas Nike Air Max</h3>
+                <p>Precio: $150</p>
+                <button onclick="agregarProducto('Zapatillas Nike Air Max', 150)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/adidas_ultraboost.jpg" alt="Zapatillas Adidas Ultraboost">
+                <h3>Zapatillas Adidas Ultraboost</h3>
+                <p>Precio: $180</p>
+                <button onclick="agregarProducto('Zapatillas Adidas Ultraboost', 180)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/puma_future_rider.jpg" alt="Zapatillas Puma Future Rider">
+                <h3>Zapatillas Puma Future Rider</h3>
+                <p>Precio: $120</p>
+                <button onclick="agregarProducto('Zapatillas Puma Future Rider', 120)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/converse_chuck_taylor.jpg" alt="Zapatillas Converse Chuck Taylor">
+                <h3>Zapatillas Converse Chuck Taylor</h3>
+                <p>Precio: $80</p>
+                <button onclick="agregarProducto('Zapatillas Converse Chuck Taylor', 80)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/vans_old_skool.jpg" alt="Zapatillas Vans Old Skool">
+                <h3>Zapatillas Vans Old Skool</h3>
+                <p>Precio: $90</p>
+                <button onclick="agregarProducto('Zapatillas Vans Old Skool', 90)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/new_balance_574.jpg" alt="Zapatillas New Balance 574">
+                <h3>Zapatillas New Balance 574</h3>
+                <p>Precio: $110</p>
+                <button onclick="agregarProducto('Zapatillas New Balance 574', 110)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/reebok_classic_leather.jpg" alt="Zapatillas Reebok Classic Leather">
+                <h3>Zapatillas Reebok Classic Leather</h3>
+                <p>Precio: $95</p>
+                <button onclick="agregarProducto('Zapatillas Reebok Classic Leather', 95)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/asics_gel_lyte_iii.jpg" alt="Zapatillas Asics Gel-Lyte III">
+                <h3>Zapatillas Asics Gel-Lyte III</h3>
+                <p>Precio: $130</p>
+                <button onclick="agregarProducto('Zapatillas Asics Gel-Lyte III', 130)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/skechers_dlites.jpg" alt="Zapatillas Skechers D'Lites">
+                <h3>Zapatillas Skechers D'Lites</h3>
+                <p>Precio: $75</p>
+                <button onclick="agregarProducto('Zapatillas Skechers D\'Lites', 75)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <img src="images/fila_disruptor_ii.jpg" alt="Zapatillas Fila Disruptor II">
+                <h3>Zapatillas Fila Disruptor II</h3>
+                <p>Precio: $100</p>
+                <button onclick="agregarProducto('Zapatillas Fila Disruptor II', 100)">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <div class="container">
+            <h2>Carrito de Compras</h2>
+            <div id="mensaje-container"></div>
+            <ul id="cart-list" class="carrito-list"></ul>
+            <div class="carrito-total">
+                <p>Subtotal: <span id="cart-subtotal">$0.00</span></p>
+                <p>Total con IVA (21%): <span id="cart-total">$0.00</span></p>
+                <button id="vaciar-carrito" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
